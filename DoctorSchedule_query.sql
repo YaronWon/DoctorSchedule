@@ -1,8 +1,6 @@
-CREATE database DoctorSch ;
-
 create table Doctor  (
  DocID int PRIMARY KEY IDENTITY(100,1),
- DocIDcard Nvarchar(255) ,--מזהה דוקטר
+ DocIDcard Nvarchar(255) ,--מזהה דוקטור
  DocFName Nvarchar(255),-- שם פרטי דוקטור
  DocLName Nvarchar(255),--שם משפחה דוקטור
  DocPhoneNum Nvarchar(255), -- מס' טלפון רופא
@@ -31,14 +29,14 @@ create table Clinic (
 );
 
 create table DocAppointment(
- DocID Nvarchar(255) PRIMARY KEY, -- מזהה רופא
- ClientID Nvarchar(255) PRIMARY KEY,--מזהה לקוח
- ClinicID Nvarchar(255) PRIMARY KEY, -- מזהה מרפאה
+ DocID int, -- מזהה רופא
+ ClientID int,--מזהה לקוח
+ ClinicID int, -- מזהה מרפאה
  AppDate Nvarchar(255), -- תאריך הפגישה
  AppHour Nvarchar(255), -- שעת הפגישה
  AppDoc Nvarchar(255), -- סיכום הפגישה
-
+ FOREIGN KEY (DocID) REFERENCES Doctor(DocID),
+ FOREIGN KEY (ClientID) REFERENCES patient(ClientID),
+ FOREIGN KEY (ClinicID) REFERENCES Clinic(ClinicID)
 
 );
-
-
