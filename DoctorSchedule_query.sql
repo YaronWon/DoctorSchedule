@@ -1,40 +1,40 @@
 CREATE database DoctorSch ;
 
 create table Doctor (
- DocID varchar(255),--ξζδδ γεχθψ
- DocFName varchar(255),-- ων τψθι γεχθεψ
- DocLName varchar(255),--ων ξωτηδ γεχθεψ
- DocPhoneNum varchar(255), -- ξρ' θμτεο ψετΰ
- DocEmail varchar(255), -- ΰιξιιμ ψετΰ
- DocPass varchar(255),-- ριρξΰ ψετΰ
- BussinessName varchar(255) -- ων δςρχ
+ DocID Nvarchar(255),--ΧΧ–Χ”Χ” Χ“Χ•Χ§ΧΧ¨
+ DocFName Nvarchar(255),-- Χ©Χ Χ¤Χ¨ΧΧ™ Χ“Χ•Χ§ΧΧ•Χ¨
+ DocLName Nvarchar(255),--Χ©Χ ΧΧ©Χ¤Χ—Χ” Χ“Χ•Χ§ΧΧ•Χ¨
+ DocPhoneNum Nvarchar(255), -- ΧΧ΅' ΧΧΧ¤Χ•Χ Χ¨Χ•Χ¤Χ
+ DocEmail Nvarchar(255), -- ΧΧ™ΧΧ™Χ™Χ Χ¨Χ•Χ¤Χ
+ DocPass Nvarchar(255),-- Χ΅Χ™Χ΅ΧΧ Χ¨Χ•Χ¤Χ
+ BussinessName Nvarchar(255) -- Χ©Χ Χ”ΧΆΧ΅Χ§
 );
 
 create table Patient(
- ClientID varchar(255),-- ξζδδ μχεη
- ClientFName varchar(255), -- ων τψθι μχεη
- ClientLname varchar(255) ,-- ων ξωτηδ μχεη
- ClientPhonenum varchar(255), -- ξρ' τμΰτεο μχεη
- ClientEmail varchar(255), -- ΰιξιιμ μχεη
- ClientPass varchar(255), -- ριρξΰ μχεη
+ ClientID Nvarchar(255),-- ΧΧ–Χ”Χ” ΧΧ§Χ•Χ—
+ ClientFName Nvarchar(255), -- Χ©Χ Χ¤Χ¨ΧΧ™ ΧΧ§Χ•Χ—
+ ClientLname Nvarchar(255) ,-- Χ©Χ ΧΧ©Χ¤Χ—Χ” ΧΧ§Χ•Χ—
+ ClientPhonenum Nvarchar(255), -- ΧΧ΅' Χ¤ΧΧΧ¤Χ•Χ ΧΧ§Χ•Χ—
+ ClientEmail Nvarchar(255), -- ΧΧ™ΧΧ™Χ™Χ ΧΧ§Χ•Χ—
+ ClientPass Nvarchar(255), -- Χ΅Χ™Χ΅ΧΧ ΧΧ§Χ•Χ—
 );
 
 create table Clinic (
- ClinicID varchar(255),-- ξζδδ ξψτΰδ
- ClinicName varchar(255),-- ων δξψτΰδ
- ClinicAddress varchar(255), -- λϊεαϊ δξψτΰδ
- ClinicOpenHours varchar(255), -- ωςεϊ τϊιηϊ ξψτΰδ
- ClinicCity varchar(255), -- ςιψ δξψτΰδ
+ ClinicID Nvarchar(255),-- ΧΧ–Χ”Χ” ΧΧ¨Χ¤ΧΧ”
+ ClinicName Nvarchar(255),-- Χ©Χ Χ”ΧΧ¨Χ¤ΧΧ”
+ ClinicAddress Nvarchar(255), -- Χ›ΧªΧ•Χ‘Χª Χ”ΧΧ¨Χ¤ΧΧ”
+ ClinicOpenHours Nvarchar(255), -- Χ©ΧΆΧ•Χª Χ¤ΧªΧ™Χ—Χª ΧΧ¨Χ¤ΧΧ”
+ ClinicCity Nvarchar(255), -- ΧΆΧ™Χ¨ Χ”ΧΧ¨Χ¤ΧΧ”
 
 );
 
 create table DocAppointment(
- DocID varchar(255), -- ξζδδ ψετΰ
- ClientID varchar(255),--ξζδδ μχεη
- ClinicID varchar(255), -- ξζδδ ξψτΰδ
- AppDate varchar(255), -- ϊΰψικ δτβιωδ
- AppHour varchar(255), -- ωςϊ δτβιωδ
- AppDoc varchar(255), -- ριλεν δτβιωδ
+ DocID Nvarchar(255), -- ΧΧ–Χ”Χ” Χ¨Χ•Χ¤Χ
+ ClientID Nvarchar(255),--ΧΧ–Χ”Χ” ΧΧ§Χ•Χ—
+ ClinicID Nvarchar(255), -- ΧΧ–Χ”Χ” ΧΧ¨Χ¤ΧΧ”
+ AppDate Nvarchar(255), -- ΧªΧΧ¨Χ™Χ Χ”Χ¤Χ’Χ™Χ©Χ”
+ AppHour Nvarchar(255), -- Χ©ΧΆΧª Χ”Χ¤Χ’Χ™Χ©Χ”
+ AppDoc Nvarchar(255), -- Χ΅Χ™Χ›Χ•Χ Χ”Χ¤Χ’Χ™Χ©Χ”
 
 
 );
