@@ -1,0 +1,10 @@
+﻿body {
+}
+
+.form-control {
+    width:400px;
+    height:50px;
+    box-shadow:10px;
+    text-align:center;
+    background-color:aliceblue;
+}
